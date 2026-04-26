@@ -13,6 +13,9 @@ for b in response["Buckets"]:
 #     CreateBucketConfiguration={"LocationConstraint": "eu-north-1"},
 # )
 
-put_response = client.put_object(
-    Bucket="myoksesaneka22testbucket", Key="test.txt", Body="Hello world"
-)
+# put_response = client.put_object(
+#     Bucket="myoksesaneka22testbucket", Key="test.txt", Body="Hello world"
+# )
+response = client.delete_object(Bucket="myoksesaneka22testbucket", Key="test.txt")
+
+response = client.delete_bucket(Bucket="myoksesaneka22testbucket")
