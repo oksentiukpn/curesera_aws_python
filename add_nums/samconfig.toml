@@ -19,7 +19,6 @@ confirm_changeset = true
 resolve_s3 = true
 stack_name = "addnums"
 s3_prefix = "addnums"
-region = "eu-north-1"
 disable_rollback = true
 image_repositories = []
 

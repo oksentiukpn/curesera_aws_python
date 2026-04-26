@@ -32,8 +32,8 @@ def lambda_handler(event, context):
     #     print(e)
 
     #     raise e
-    n1 = int(event.get("n1", 0))
-    n2 = int(event.get("n2", 0))
+    n1 = int(event.get("queryStringParameters", {}).get("n1", 0))
+    n2 = int(event.get("queryStringParameters", {}).get("n2", 0))
 
     return {
         "statusCode": 200,
