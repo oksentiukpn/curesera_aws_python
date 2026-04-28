@@ -1,2 +1,3 @@
-requestspymysql
+requests
+pymysql
 python-dotenv
