@@ -4,6 +4,7 @@ version = 0.1
 
 [default.global.parameters]
 stack_name = "db_test"
+region = "eu-north-1"
 
 [default.build.parameters]
 cached = true
@@ -16,6 +17,11 @@ lint = true
 capabilities = "CAPABILITY_IAM"
 confirm_changeset = true
 resolve_s3 = true
+stack_name = "dbtest"
+s3_prefix = "dbtest"
+region = "eu-north-1"
+disable_rollback = true
+image_repositories = []
 
 [default.package.parameters]
 resolve_s3 = true
